@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-データベース [addres]　はスペルミスのため、model名が　[addre] になっています
+データベース [addres]　はスペルミスのため、model名が　[addre] になっています　確認お願いします。
