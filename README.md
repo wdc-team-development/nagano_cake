@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+データベース [addres]　はスペルミスのため、model名が　[addre] になっています
