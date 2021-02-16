@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'customers/show' => 'customers#show'
   get 'customers/edit' => 'customers#edit'
   get 'customers/unsubscribe' => 'customers#unsubscribe'
-  resources :customers, only: [:withdraw, :unsubscribe, :update]
+  resources :customers, only: [:update]
   devise_for :admins
   devise_for :customers
 end
