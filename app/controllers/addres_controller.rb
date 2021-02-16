@@ -1,2 +1,0 @@
-class AddresController < ApplicationController
-end
