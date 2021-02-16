@@ -12,20 +12,20 @@
 <h1>新着情報</h1>
 <div class="container pull-left table-responsive">
  <table class="table", display: block>
-    <% @items.first(5).each do |item| %>
+    <%# @items.first(5).each do |item| %>
      <thead>
       <tr>
-       <%= attachment_image_tag item, :profile_image, size: "40x40", format: 'jpeg' %>
+       <%# attachment_image_tag item, :profile_image, size: "40x40", format: 'jpeg' %>
       </tr>
       <tr>
-       <%= item.name %>
+       <%# item.name %>
       </tr>
       <tr>
-       ¥<%= item.price %>
+       ¥<%# item.price %>
       </tr>
      </thead>
-   <% end %>
+   <%# end %>
  </table>
 </div>
 
-<%= linl_to '全ての商品を見る', ルートパス, margin:right 50px %>
+<%# linl_to '全ての商品を見る', ルートパス, margin:right 50px %> 
