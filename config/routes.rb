@@ -35,5 +35,6 @@ Rails.application.routes.draw do
   resources :orders, only:[:new, :create, :index, :show]
   post 'comfirm' => 'orders#comfirm'
   get 'complete' => 'orders#complete'
-
+  
+  devise_for :customers
 end

@@ -90,18 +90,6 @@ ActiveRecord::Schema.define(version: 2021_02_17_072826) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "oder_items", force: :cascade do |t|
-    t.integer "item_id"
-    t.integer "oder_id"
-    t.integer "price"
-    t.integer "amount"
-    t.integer "making_status"
-    t.datetime "create_at"
-    t.datetime "update_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "oders", force: :cascade do |t|
     t.integer "customer_id"
     t.string "delivery_postal"
