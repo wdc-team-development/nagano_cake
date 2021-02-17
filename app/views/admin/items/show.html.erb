@@ -1,1 +1,15 @@
 <h1>商品詳細ページ</h1>
+
+<h4>左側に商品画像</h4>
+
+<%= @item.name %>
+
+<%= @item.introduction %>
+
+<%= @item.genre %>
+
+<%= @item.price %>
+
+<%= @item.is_active %>
+
+<%= link_to '編集する',  edit_admin_item(@item.id) %>
