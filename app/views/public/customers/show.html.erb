@@ -4,7 +4,7 @@
       <body>
         <h2>マイページ</h2>
         <h2>登録情報</h2>
-        <%= link_to '編集', customers_edit_path, class: "btn btn-outline-secondary" %>
+        <%= link_to '編集', customer_edit_path, class: "btn btn-outline-secondary" %>
         <table class="table">
           <tr>
             <td>氏名</td>
@@ -32,9 +32,9 @@
           </tr>
         </table>
         <h2>配送先</h2>
-        <%= link_to '一覧を見る',　class: "btn btn-outline-secondary" %>
+        <%= link_to '一覧を見る', addres_path, class: "btn btn-outline-secondary" %>
         <h2>注文履歴</h2>
-        <%= link_to '一覧を見る',　class: "btn btn-outline-secondary" %>
+        <%= link_to '一覧を見る', class: "btn btn-outline-secondary" %>
       </body>
     </div>
   </div>
