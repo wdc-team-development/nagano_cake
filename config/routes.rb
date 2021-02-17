@@ -41,6 +41,7 @@ Rails.application.routes.draw do
     delete 'destroy_all' => 'cart_items#destroy_all'
 
 
+
     resources :oders, only:[:new, :create, :index, :show]
     post 'comfirm' => 'oders#comfirm'
     get 'complete' => 'oders#complete'
