@@ -2,11 +2,11 @@
 <div class='container'>
   <div class='row'>
     <div class='col'>
-      <%= form_with model:@item,local:true do |f| %>
+      <%= form_with model: @item,local:true do |f| %>
         <table>
           <tr>
             <td><%= f.label :商品画像 %></td>
-            <td><%# f.attachment_field :image %></td>
+            <td><%= f.attachment_field :image %></td>
           </tr>
           <tr>
             <td><%= f.label :商品名 %></td>
@@ -26,7 +26,8 @@
           </tr>
           <tr>
             <td><%= f.label :販売ステータス %></td>
-            <td><%= "enumのgemを追加する必要あり？？？" %></td>
+            <td><%= f.label :販売中 %><%= f.radio_button :is_active,"true" %></td>
+            <td><%= f.label :販売停止 %><%= f.radio_button :is_active,"false" %></td>
           </tr>
           <tr>
             <td></td>
