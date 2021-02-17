@@ -1,1 +1,39 @@
-<h1>商品追加ページ</h1>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col'>
+      <%= form_with model:@item,local:true do |f| %>
+        <table>
+          <tr>
+            <td><%= f.label :商品画像 %></td>
+            <td><%# f.attachment_field :image %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :商品名 %></td>
+            <td><%= f.text_field :name %></td>
+          </tr>
+          <tr> 
+            <td><%= f.label :商品説明 %></td>
+            <td><%= f.text_area :introduction %></td>
+          </tr>
+          <tr>
+            <td><%= f.label :ジャンル %></td>
+            <td><%# f.collection_select :genre, Genre.all, : include_blank: "選択して下さい"%></td>
+          </tr>
+          <tr>
+            <td><%= f.label :税抜価格 %></td>
+            <td><%= f.number_field :price %>円</td>
+          </tr>
+          <tr>
+            <td><%= f.label :販売ステータス %></td>
+            <td><%= "enumのgemを追加する必要あり？？？" %></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><%= f.submit class: 'btn btn-success' %></td>
+          </tr>
+        </table>
+        <% end %>
+      </div>
+    </div>
+  </div>
