@@ -1,4 +1,5 @@
 class Genre < ApplicationRecord
     
-    has_many :products
+    has_many :items, dependent: :destroy
+    
 end
