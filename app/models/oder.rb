@@ -1,6 +1,5 @@
 class Oder < ApplicationRecord
   
-  def index
-  end
+  enum billing_amount:    [ :クレジットカード, :銀行振り込み ]
 
 end
