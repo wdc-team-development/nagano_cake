@@ -17,7 +17,7 @@
                 <tr>
                 <% @customer.each do |user| %>
                     <tr>
-                        <td><%= user.id%></td>
+                        <td><%= customer.id%></td>
                         <td><%= link_to user.last_name+customer.first_name, admin_customer_path(customer.id) %></td>
                         <td><%= customer.email%></td>
                         <td>
