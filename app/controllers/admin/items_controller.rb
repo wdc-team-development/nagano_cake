@@ -17,7 +17,7 @@ class Admin::ItemsController < ApplicationController
         if @item.save
             redirect_to root_path
         else
-            redirect_to new_admin_item
+            redirect_to root_path
         end
     end
 
@@ -29,7 +29,7 @@ class Admin::ItemsController < ApplicationController
 
   private
     def item_params
-    params.require(:item).permit(:name, :introduction, :image)
+    params.require(:item).permit(:name, :introduction, :image, :price, :genre_id, :introduction, :is_active)
     end
 
 end

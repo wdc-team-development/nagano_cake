@@ -2,7 +2,7 @@
 <div class='container'>
   <div class='row'>
     <div class='col'>
-      <%= form_with model: @item,local:true do |f| %>
+      <%= form_with model: @item,url: admin_items_path,local:true do |f| %>
         <table>
           <tr>
             <td><%= f.label :商品画像 %></td>
@@ -18,7 +18,7 @@
           </tr>
           <tr>
             <td><%= f.label :ジャンル %></td>
-            <td><%# f.collection_select :genre, Genre.all, : include_blank: "選択して下さい"%></td>
+            <td><%= f.collection_select :genre_id, Genre.all, :id, :name %></td>
           </tr>
           <tr>
             <td><%= f.label :税抜価格 %></td>
