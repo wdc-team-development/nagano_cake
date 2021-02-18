@@ -46,5 +46,5 @@ Rails.application.routes.draw do
     post 'comfirm' => 'oders#comfirm'
     get 'complete' => 'oders#complete'
   end
-  
+
 end
